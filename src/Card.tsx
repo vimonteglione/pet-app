@@ -4,7 +4,7 @@ import { Text, View, StyleSheet } from "react-native";
 export default function Card() {
   return (
     <View style={styles.card}>
-      <Text style={styles.title}>Curso X</Text>
+      <Text style={styles.title}>PET TEC</Text>
     </View>
   );
 }
