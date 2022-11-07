@@ -1,35 +1,32 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import React from 'react';
+import { StatusBar } from 'react-native';
+import {useFonts} from 'expo-font';
+import {ArchivoBlack_400Regular} from '@expo-google-fonts/archivo-black';
+import {Lato_400Regular} from '@expo-google-fonts/lato';
+import {Oswald_400Regular} from '@expo-google-fonts/oswald';
+import AppLoading from 'expo-app-loading';
 
-import Card from './src/Card'
+import {SignIn} from './src/screens/SignIn';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Aplicativo</Text>
-      <StatusBar style="dark" />
-      <ScrollView>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </ScrollView>
-    </View>
+export default function App(){
+  const [fontsLoaded] = useFonts({
+    ArchivoBlack_400Regular,
+    Lato_400Regular,
+    Oswald_400Regular
+  });
+
+  if(!fontsLoaded){
+    return <AppLoading/>
+  }
+
+  return(
+    <>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="transparent"  
+        translucent 
+      />
+      <SignIn/>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  title: {
-    fontSize: 40,
-    padding: 20,
-    marginBottom: 40,
-    paddingTop: 80,
-  },
-});
