@@ -1,23 +1,20 @@
 
 import {StyleSheet} from 'react-native';
 
-import  {theme} from '../../../global/theme';
+import  {theme} from '../../global/styles/theme';
 
 export const styles = StyleSheet.create(
     {
     container: {
             flex: 1,
-            justifyContent:'center',
-            alingItems:'center',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
      },
     
     image:{
             width: 257,
             height:271,
-            left:59,
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
             resizeMode: 'center'
 
     },
@@ -31,10 +28,10 @@ export const styles = StyleSheet.create(
         textAlign: 'center',
         fontSize: 22,
         marginBottom:23,
-        fontFamily: theme.fonts.title1
+        fontFamily: theme.fonts.title900
     },
     subtitle:{
-        color:theme.colors.heading1,
+        color:theme.colors.text,
         textAlign: 'center',
         fontSize: 16,
         marginBottom:34,

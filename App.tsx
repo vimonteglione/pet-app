@@ -1,32 +1,35 @@
-import React from 'react';
-import { StatusBar } from 'react-native';
-import {useFonts} from 'expo-font';
-import {ArchivoBlack_400Regular} from '@expo-google-fonts/archivo-black';
-import {Lato_400Regular} from '@expo-google-fonts/lato';
-import {Oswald_400Regular} from '@expo-google-fonts/oswald';
-import AppLoading from 'expo-app-loading';
+import React, { useEffect } from "react";
+import { StatusBar } from "react-native";
+import { useFonts } from "expo-font";
+import { Archivo_900Black, Archivo_700Bold } from "@expo-google-fonts/archivo";
+import { Inter_400Regular, Inter_500Medium } from "@expo-google-fonts/inter";
+import AppLoading from "expo-app-loading";
 
-import {SignIn} from './src/screens/SignIn';
+import { Routes } from "./src/routes";
 
-export default function App(){
-  const [fontsLoaded] = useFonts({
-    ArchivoBlack_400Regular,
-    Lato_400Regular,
-    Oswald_400Regular
-  });
+import { SignIn } from "./src/screens/SignIn";
+import { Home } from "./src/screens/Home";
 
-  if(!fontsLoaded){
-    return <AppLoading/>
-  }
+export default function App() {
+    const [fontsLoaded] = useFonts({
+        Archivo_900Black,
+        Archivo_700Bold,
+        Inter_400Regular,
+        Inter_500Medium,
+    });
 
-  return(
-    <>
-      <StatusBar
-        barStyle="light-content"
-        backgroundColor="transparent"  
-        translucent 
-      />
-      <SignIn/>
-    </>
-  );
+    if (!fontsLoaded) {
+        return <AppLoading />;
+    }
+
+    return (
+        <>
+            <StatusBar
+                barStyle="dark-content"
+                backgroundColor="transparent"
+                translucent
+            />
+            <Routes />
+        </>
+    );
 }
