@@ -12,7 +12,7 @@ export function CourseSelect() {
             horizontal
             style={styles.container}
             showsHorizontalScrollIndicator={false}
-            contentContainerStyle={{ padding: 40 }}
+            contentContainerStyle={{ paddingHorizontal: 40 }}
         >
             {courses.map((course) => (
                 <Course

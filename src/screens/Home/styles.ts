@@ -24,5 +24,12 @@ export const styles = StyleSheet.create({
         fontFamily: theme.fonts.title900,
         fontSize: 24,
         marginLeft: 40,
+        marginBottom: 30,
+    },
+    subtitle: {
+        fontFamily: theme.fonts.title900,
+        fontSize: 18,
+        marginLeft: 40,
+        marginBottom: 12,
     },
 });

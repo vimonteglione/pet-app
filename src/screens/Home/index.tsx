@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image, Text } from "react-native";
+import { View, Image, Text, ScrollView } from "react-native";
 import { styles } from "./styles";
 
 import petIcon from "../../../assets/logo.png";
@@ -16,10 +16,15 @@ export function Home() {
                     resizeMode="stretch"
                 />
             </View>
-            <View>
-                <Text style={styles.title}>Nossos cursos</Text>
+            <Text style={styles.title}>Nossos cursos</Text>
+            <ScrollView>
+                <Text style={styles.subtitle}>Gerais</Text>
                 <CourseSelect />
-            </View>
+                <Text style={styles.subtitle}>Tutoriais</Text>
+                <CourseSelect />
+                <Text style={styles.subtitle}>X</Text>
+                <CourseSelect />
+            </ScrollView>
         </View>
     );
 }

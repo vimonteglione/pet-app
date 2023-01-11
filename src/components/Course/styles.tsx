@@ -3,8 +3,6 @@ import { theme } from "../../global/styles/theme";
 
 export const styles = StyleSheet.create({
     container: {
-        width: 144,
-        height: 205,
         marginRight: 14,
     },
     box: {
