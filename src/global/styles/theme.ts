@@ -10,11 +10,12 @@ export const theme = {
         background2: "#f58c1e",
         background2grad: "#f3b575",
         background3: "#fcd344",
-        background3grad: "#f6dc80",  
+        background3grad: "#f6dc80",
     },
     fonts: {
         title900: "Archivo_900Black",
         title700: "Archivo_700Bold",
+        title400: "Archivo_400Regular",
         text500: "Inter_500Medium",
         text400: "Inter_400Regular",
     },

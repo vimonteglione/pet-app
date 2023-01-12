@@ -4,6 +4,8 @@ import { theme } from "../../global/styles/theme";
 export const styles = StyleSheet.create({
     container: {
         marginRight: 14,
+        padding: 5,
+        borderRadius: 8,
     },
     box: {
         width: 144,

@@ -3,8 +3,8 @@ import { Text, Image, ScrollView } from "react-native";
 
 import { styles } from "./styles";
 
-import { courses } from "../../utils/courses";
-import { Course } from "../Course";
+import { courses } from "../../utils/courseList";
+import { CourseButton } from "../CourseButton";
 
 export function CourseSelect() {
     return (
@@ -15,12 +15,12 @@ export function CourseSelect() {
             contentContainerStyle={{ paddingHorizontal: 40 }}
         >
             {courses.map((course) => (
-                <Course
+                <CourseButton
                     key={course.id}
                     title={course.title}
                     icon={course.icon}
                     level={course.level}
-                ></Course>
+                ></CourseButton>
             ))}
         </ScrollView>
     );

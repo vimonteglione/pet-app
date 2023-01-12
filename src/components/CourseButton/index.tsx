@@ -2,6 +2,7 @@ import React from "react";
 import { View, Image, Text, ImageURISource } from "react-native";
 import { RectButton, RectButtonProps } from "react-native-gesture-handler";
 import { LinearGradient } from "expo-linear-gradient";
+import { useNavigation } from "@react-navigation/native";
 
 import { styles } from "./styles";
 import { theme } from "../../global/styles/theme";
@@ -12,7 +13,7 @@ type Props = RectButtonProps & {
     level: String;
 };
 
-export function Course({ title, icon, level, ...rest }: Props) {
+export function CourseButton({ title, icon, level, ...rest }: Props) {
     var color1 = "";
     var color2 = "";
 
@@ -27,8 +28,14 @@ export function Course({ title, icon, level, ...rest }: Props) {
         color2 = theme.colors.background3grad;
     }
 
+    const navigation = useNavigation();
+
+    function handleNavigate() {
+        navigation.navigate(title);
+    }
+
     return (
-        <RectButton {...rest} style={styles.container}>
+        <RectButton {...rest} style={styles.container} onPress={handleNavigate}>
             <LinearGradient style={styles.box} colors={[color1, color2]}>
                 <View style={styles.content}>
                     <Image source={icon} style={styles.image} />
