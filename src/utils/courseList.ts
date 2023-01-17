@@ -3,6 +3,8 @@ import LaTexLogo from "../assets/latex.png";
 import ReactLogo from "../assets/react.png";
 
 import { PythonCourse } from "../screens/Courses/PythonCourse";
+import { LatexCourse } from "../screens/Courses/LatexCourse";
+
 
 export const courses = [
     {
@@ -17,7 +19,7 @@ export const courses = [
         title: "LaTeX",
         icon: LaTexLogo,
         level: "Intermediário",
-        component: PythonCourse,
+        component: LatexCourse,
     },
     {
         id: "3",
