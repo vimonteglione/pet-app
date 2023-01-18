@@ -6,33 +6,33 @@ import InProgressLogo from "../assets/inProgress.png";
 import { PythonCourse } from "../screens/Courses/PythonCourse";
 import { LatexCourse } from "../screens/Courses/LaTeXCourse";
 
-export const courses = [
+export const tutorials = [
     {
         id: "1",
-        title: "Python",
-        icon: PythonLogo,
-        level: "Iniciante",
+        title: "Estação Meteorológica ESP32",
+        icon: InProgressLogo,
+        level: "Intermediário",
         component: PythonCourse,
     },
     {
         id: "2",
-        title: "LaTeX",
-        icon: LaTexLogo,
-        level: "Intermediário",
+        title: "Monitor Cardíaco ESP32",
+        icon: InProgressLogo,
+        level: "Avançado",
         component: LatexCourse,
     },
     {
         id: "3",
-        title: "React Native",
+        title: "Histórico de Presença ESP32",
         icon: InProgressLogo,
         level: "Avançado",
         component: PythonCourse,
     },
     {
         id: "3",
-        title: "Eletrônica Analógica 2",
+        title: "Monitoramento de Sensor Touch",
         icon: InProgressLogo,
-        level: "Intermediário",
+        level: "Avançado",
         component: PythonCourse,
     },
 ];

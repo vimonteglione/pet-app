@@ -20,6 +20,7 @@ export const styles = StyleSheet.create({
         width: 50,
     },
     title: {
+        width: 144,
         fontFamily: theme.fonts.title700,
         fontSize: 15,
         marginTop: 14,

@@ -22,7 +22,6 @@ export const styles = StyleSheet.create({
         alignSelf: "center",
         padding: 10,
         borderRadius: 8,
-        borderWidth: 1,
         backgroundColor: "#EFEFEF",
     },
     buttonText: {
@@ -36,7 +35,7 @@ export const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         marginTop: 20,
-        marginBottom: 42,
+        marginBottom: 15,
     },
     image: {
         width: 35,
@@ -52,5 +51,26 @@ export const styles = StyleSheet.create({
         fontSize: 18,
         marginLeft: 40,
         marginBottom: 12,
+    },
+    viewPager: {
+        flex: 1,
+    },
+    dots: {
+        flexDirection: "row",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        backgroundColor: "gba(255,255,255,0.5)",
+        marginVertical: 14,
+    },
+    dot: {
+        width: 10,
+        height: 10,
+        borderRadius: 100,
+        backgroundColor: "#EFEFEF",
+        marginHorizontal: 2,
+        marginVertical: 5,
+    },
+    dotActivated: {
+        backgroundColor: "black",
     },
 });

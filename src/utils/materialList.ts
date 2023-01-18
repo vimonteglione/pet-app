@@ -6,33 +6,26 @@ import InProgressLogo from "../assets/inProgress.png";
 import { PythonCourse } from "../screens/Courses/PythonCourse";
 import { LatexCourse } from "../screens/Courses/LaTeXCourse";
 
-export const courses = [
+export const materials = [
     {
         id: "1",
-        title: "Python",
-        icon: PythonLogo,
+        title: "Introdução à Programação Embarcada",
+        icon: InProgressLogo,
         level: "Iniciante",
         component: PythonCourse,
     },
     {
         id: "2",
-        title: "LaTeX",
-        icon: LaTexLogo,
-        level: "Intermediário",
+        title: "Introdução à Eletrônica Analógica",
+        icon: InProgressLogo,
+        level: "Avançado",
         component: LatexCourse,
     },
     {
         id: "3",
-        title: "React Native",
+        title: "Materiais Didáticos de Apoios a Aprendizagem",
         icon: InProgressLogo,
         level: "Avançado",
-        component: PythonCourse,
-    },
-    {
-        id: "3",
-        title: "Eletrônica Analógica 2",
-        icon: InProgressLogo,
-        level: "Intermediário",
         component: PythonCourse,
     },
 ];

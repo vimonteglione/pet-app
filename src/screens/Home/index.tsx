@@ -5,6 +5,8 @@ import { styles } from "./styles";
 import petIcon from "../../../assets/logo.png";
 
 import { CourseSelect } from "../../components/CourseSelect";
+import { TutorialSelect } from "../../components/TutorialSelect";
+import { MaterialSelect } from "../../components/MaterialSelect";
 
 export function Home() {
     return (
@@ -21,9 +23,9 @@ export function Home() {
                 <Text style={styles.subtitle}>Gerais</Text>
                 <CourseSelect />
                 <Text style={styles.subtitle}>Tutoriais</Text>
-                <CourseSelect />
-                <Text style={styles.subtitle}>X</Text>
-                <CourseSelect />
+                <TutorialSelect />
+                <Text style={styles.subtitle}>Materiais</Text>
+                <MaterialSelect />
             </ScrollView>
         </View>
     );
